@@ -1,0 +1,31 @@
+{
+  "name": "tile-cover-boxes",
+  "version": "0.0.0",
+  "description": "Generate slippy tiles to cover plumped polyline.",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://furkot.com"
+  },
+  "repository": "pirxpilot/tile-cover-boxes",
+  "license": "MIT",
+  "keywords": [
+    "tile",
+    "cover",
+    "boxes",
+    "polyline"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
