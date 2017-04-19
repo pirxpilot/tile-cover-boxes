@@ -15,9 +15,7 @@
     "boxes",
     "polyline"
   ],
-  "dependencies": {
-    "@mapbox/tilebelt": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jshint": "^2.9.4",
     "mocha": "^3.2.0",
