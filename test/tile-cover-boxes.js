@@ -1,3 +1,5 @@
+const { describe, it } = require('node:test');
+
 var tileCoverBoxes = require('../');
 
 describe('tile-cover-boxes', function () {

@@ -1,3 +1,5 @@
+const { describe, it } = require('node:test');
+
 var tileset = require('../lib/tileset');
 
 describe('tileset', function () {

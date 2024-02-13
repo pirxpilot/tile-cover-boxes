@@ -1,3 +1,5 @@
+const { describe, it } = require('node:test');
+
 var tools = require('../lib/tools');
 
 describe('tools', function () {
