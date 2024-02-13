@@ -1,6 +1,6 @@
 const { describe, it } = require('node:test');
 
-var tileset = require('../lib/tileset');
+const tileset = require('../lib/tileset');
 
 describe('tileset', function () {
 
@@ -9,7 +9,7 @@ describe('tileset', function () {
   });
 
   it('should return tiles that been put in it', function () {
-    var tiles = tileset()
+    const tiles = tileset()
       .push([1, 1, 4])
       .push([2, 3, 5])
       .values();
@@ -20,7 +20,7 @@ describe('tileset', function () {
   });
 
   it('should eliminate duplicates', function () {
-    var tiles = tileset()
+    const tiles = tileset()
       .push([1, 1, 4])
       .push([2, 3, 5])
       .push([1, 1, 4])
