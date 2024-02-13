@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://furkot.com"
   },
-  "repository": "pirxpilot/tile-cover-boxes",
+  "repository": "github:pirxpilot/tile-cover-boxes",
   "license": "MIT",
   "keywords": [
     "tile",
@@ -17,9 +17,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "jshint": "^2.9.4",
-    "mocha": "^3.2.0",
-    "should": "^11.2.1"
+    "@pirxpilot/jshint": "~3",
+    "should": "~13"
   },
   "scripts": {
     "test": "make check"

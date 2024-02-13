@@ -1,10 +1,12 @@
-var tools = require('../lib/tools');
+const { describe, it } = require('node:test');
+
+const tools = require('../lib/tools');
 
 describe('tools', function () {
 
-  describe('parent', function() {
+  describe('parent', function () {
 
-    it('should return parent for tile', function() {
+    it('should return parent for tile', function () {
       tools.parent([4, 3, 6]).should.eql([2, 1, 5]);
       tools.parent([5, 2, 6]).should.eql([2, 1, 5]);
       tools.parent([4, 2, 6]).should.eql([2, 1, 5]);
@@ -13,9 +15,9 @@ describe('tools', function () {
 
   });
 
-  describe('llToTile', function() {
+  describe('llToTile', function () {
 
-    it('should return tile for geo coordinates', function() {
+    it('should return tile for geo coordinates', function () {
 
       tools.llToTile([-70, 40], 0).should.eql([0, 0, 0]);
       tools.llToTile([-70, 40], 1).should.eql([0, 0, 1]);

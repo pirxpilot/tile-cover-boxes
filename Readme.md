@@ -1,6 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][deps-image]][deps-url]
 
 # tile-cover-boxes
 
@@ -35,11 +35,11 @@ var tiles = tileCoverBoxes(boxes);
 
 MIT © [Damian Krzeminski](https://furkot.com)
 
-[npm-image]: https://img.shields.io/npm/v/tile-cover-boxes.svg
+[npm-image]: https://img.shields.io/npm/v/tile-cover-boxes
 [npm-url]: https://npmjs.org/package/tile-cover-boxes
 
-[travis-url]: https://travis-ci.org/pirxpilot/tile-cover-boxes
-[travis-image]: https://img.shields.io/travis/pirxpilot/tile-cover-boxes.svg
+[build-url]: https://github.com/pirxpilot/tile-cover-boxes/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/tile-cover-boxes/check.yaml?branch=main
 
-[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/tile-cover-boxes.svg
-[gemnasium-url]: https://gemnasium.com/pirxpilot/tile-cover-boxes
+[deps-image]: https://img.shields.io/librariesio/release/npm/tile-cover-boxes
+[deps-url]: https://libraries.io/npm/tile-cover-boxes
