@@ -18,12 +18,8 @@ describe('tile-cover-boxes', function () {
   });
 
   it('should return exactly 1 tile for any box on zoom 0', function () {
-    assert.deepEqual(tileCoverBoxes([box1], 0, 0), [
-      [0, 0, 0]
-    ]);
-    assert.deepEqual(tileCoverBoxes([box1, box2], 0, 0), [
-      [0, 0, 0]
-    ]);
+    assert.deepEqual(tileCoverBoxes([box1], 0, 0), [[0, 0, 0]]);
+    assert.deepEqual(tileCoverBoxes([box1, box2], 0, 0), [[0, 0, 0]]);
   });
 
   it('should return tiles for each requested zoom level for a single box', function () {
@@ -63,5 +59,4 @@ describe('tile-cover-boxes', function () {
       [19, 24, 6]
     ]);
   });
-
 });
