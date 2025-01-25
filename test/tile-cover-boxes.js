@@ -1,4 +1,5 @@
 const { describe, it } = require('node:test');
+const assert = require('node:assert/strict');
 
 const tileCoverBoxes = require('../');
 
@@ -13,20 +14,20 @@ describe('tile-cover-boxes', function () {
   ];
 
   it('should return empty set if no boxes', function () {
-    tileCoverBoxes([]).should.eql([]);
+    assert.deepEqual(tileCoverBoxes([]), []);
   });
 
   it('should return exactly 1 tile for any box on zoom 0', function () {
-    tileCoverBoxes([box1], 0, 0).should.eql([
+    assert.deepEqual(tileCoverBoxes([box1], 0, 0), [
       [0, 0, 0]
     ]);
-    tileCoverBoxes([box1, box2], 0, 0).should.eql([
+    assert.deepEqual(tileCoverBoxes([box1, box2], 0, 0), [
       [0, 0, 0]
     ]);
   });
 
   it('should return tiles for each requested zoom level for a single box', function () {
-    tileCoverBoxes([box2], 5, 9).should.eql([
+    assert.deepEqual(tileCoverBoxes([box2], 5, 9), [
       [9, 11, 5],
       [9, 12, 5],
       [19, 23, 6],
@@ -47,7 +48,7 @@ describe('tile-cover-boxes', function () {
   });
 
   it('should return tiles for each requested zoom level for multiple boxes', function () {
-    tileCoverBoxes([box1, box2], 5, 6).should.eql([
+    assert.deepEqual(tileCoverBoxes([box1, box2], 5, 6), [
       [15, 15, 5],
       [15, 16, 5],
       [16, 15, 5],
