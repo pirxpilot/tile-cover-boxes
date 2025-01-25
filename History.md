@@ -1,4 +1,11 @@
 
+2.1.0 / 2025-01-25
+==================
+
+ * use `biome` as a linter and formatter
+ * remove Object.values polyfill
+ * replace `Math.pow` with an `**` operator
+
 2.0.1 / 2024-02-21
 ==================
 

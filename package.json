@@ -1,6 +1,6 @@
 {
   "name": "tile-cover-boxes",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Generate slippy tiles to cover plumped polyline.",
   "author": {
     "name": "Damian Krzeminski",
